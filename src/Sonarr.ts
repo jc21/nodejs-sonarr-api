@@ -93,13 +93,6 @@ export class Sonarr extends HTTP {
     }
 
     /**
-     * Name of Class
-     */
-    public get name(): string {
-        return "sonarr";
-    }
-
-    /**
      * HTTP Request
      */
     public async request<T>(body?: T): Promise<RequestInit> {
