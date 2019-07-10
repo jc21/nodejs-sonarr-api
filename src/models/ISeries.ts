@@ -1,0 +1,43 @@
+import {SeriesStatus, SeriesType} from "./enums";
+import {IImage, IRating, ISeriesSeason, ISeriesTitle} from "./index";
+
+export interface ISeries {
+    added: Date;
+    airTime: string;
+    alternativeTitles: ISeriesTitle[];
+    certification: string;
+    cleanTitle: string;
+    episodeCount: number;
+    episodeFileCount: number;
+    firstAired: Date;
+    genres: string[];
+    id: number;
+    images: IImage[];
+    imdbId: string;
+    lastInfoSync: Date;
+    monitored: boolean;
+    network: string;
+    overview: string;
+    path: string;
+    previousAiring: Date;
+    profileId: number;
+    qualityProfileId: number;
+    ratings: IRating;
+    runtime: number;
+    seriesType: SeriesType;
+    seasonCount: number;
+    seasonFolder: string;
+    seasons: ISeriesSeason[];
+    sizeOnDisk: number;
+    sortTitle: string;
+    status: SeriesStatus;
+    tags: string[];
+    title: string;
+    titleSlug: string;
+    tvdbId: number;
+    tvMazeId: number;
+    tvRageId: number;
+    totalEpisodeCount: number;
+    useSceneNumbering: boolean;
+    year: number;
+}

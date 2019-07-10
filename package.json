@@ -1,0 +1,33 @@
+{
+  "name": "@jc21/sonarr-api",
+  "version": "0.1.0",
+  "description": "An API Client for Sonarr",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "author": "Jamie Curnow <jc@jc21.com> (https://jc21.com)",
+  "license": "MIT",
+  "keywords": [
+    "sonarr",
+    "api"
+  ],
+  "scripts": {
+    "build": "rm -rf lib/* && tsc --project tsconfig.build.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jc21/nodejs-sonarr-api"
+  },
+  "devDependencies": {
+    "@nofrills/lincoln": "^5.0.1",
+    "@nofrills/lincoln-debug": "^5.0.1",
+    "@types/node": "^12.6.2",
+    "cross-env": "^5.2.0",
+    "rimraf": "^2.6.3",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "@nofrills/http": "^5.0.1"
+  }
+}
